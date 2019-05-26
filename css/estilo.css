@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+.bodyprincipal{
+    background-image: url(/imagens/anime-landscape-1.jpeg);   
+    background-size: cover;
+}
+
+.bodydosprojetos{
+    background-image: url(/imagens/animelandscape2.png);
+    background-size: cover;
+}
+
+h1, h2, h3, h4,h5, h6, p{
+    font-family: 'Merriweather', serif;
+}
+
+.corbranca{
+    background-color: white;
+    color: black;
+}
+
+.alinharaocentro{
+    text-align: center;
+    align-content: center;
+}
+
+.textopreto{
+    color: black;
+}
+
+.textobranco{
+    color: white;
+}
