@@ -1,57 +1,200 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt-br">
     <head>
-        <!--Metas Tags & Others-->
-        <meta charset="UTF-8">
+        <title>João Ferreira Portifólio | Projetos</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <meta name="viewport" content="width=device-width, initial-scale=1"> <!--Ajustar site-->
-        <title>João Ferreira Portfólio | Projetos</title>
-        <!--Ulkit Import-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/css/uikit.min.css" />
-        <!--Bootstrap Import-->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <!--Custom css-->
         <link rel="stylesheet" href="./css/estilo.css">
-        <!--Custom Javascrips-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit-icons.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/carregar.css">
+        <link rel="stylesheet" href="css/all.css">
+        <link rel="stylesheet" href="./css/weather.css">
     </head>
-    <body class="bodydosprojetos">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 alinharaocentro corbranca">
-                    <h3><b>Alguns de meu projetos com comunidadades OpenSource:</b></h3>
+    <body id="projetos">
+        <header>
+            <div class="carregar">
+                <img src="/imagens/load.gif" alt="Loading..." title="Is loading.........." />
+            </div>
+        </header>
+        <main>
+                <div class="weather snow">
+                   <div class="container">
+                       <div class="row">
+                           <div class="col-md-12 corbranca">
+                               <h1>João Vitor Ferreira</h1>
+                               <h4>Visualize aqui meus melhores trabalhos: hobbies, profissionais(Públicos), acadêmicos e contribuições.</h4>
+                           </div>
+                       </div>
+                       <div class="row">
+                           <div class="col-md-12 corbrancafundo">
+                               <table class="table" id="tabela">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Badge</th>
+                                            <th scope="col">Descrição</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><img class="icon" src="imagens/star.png" alt="star"></td>
+                                            <td><p class="icon_label">Projeto com grande destaque de comunidade e público.</p></td>
+                                        </tr>
+                                        <tr>
+                                            <td><img class="icon" src="/imagens/bin.png" alt="bin"></td>
+                                            <td><p class="icon_label">Projeto de pesquisa e análise de binários</p></td>
+                                        </tr>
+                                        <tr>
+                                            <td><img class="icon" src="/imagens/hackathon.png" alt="hack"></td>
+                                            <td><p class="icon_label">Projeto vencedor de desafíos/competições/hackathon,certificado ou trabalho acadêmico.</p></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                               <form style="display: inline" action="./index.html" method="get">
+                                    <button class="buttonHome"><i class="fas fa-home"></i>&nbsp;Home</button>
+                               </form>
+                               <button class="buttonProjetosP" onclick="mostrarProjetos()"><i class="fas fa-award"></i>&nbsp;Projetos</button>
+                               <button class="buttonArtigos" onclick="mostraRepositorios()"><i class="far fa-file-word"></i>&nbsp;Analises</button>
+                           </div>
+                           <div class="col-md-12">
+                               <div id="extend">
+                               </div>
+                           </div>
+                           <!-- projects área -->
+                           <div class="col-md-6 corbrancafundo auterprojeto">
+                               <div class="row">
+                                   <div class="col-md-12">
+                                       <h4>Spotify ADS Cracker</h4>
+                                   </div>
+                                   <div class="col-md-12">
+                                           <img class="icon" src="imagens/star.png" alt="starbadge" title="Ganhamos uma grande comunidade, que apoia e ama o projeto.">
+                                           <img class="icon" src="/imagens/bin.png" alt="bin" title="Esse projeto foi desenvolvido analisando o código fonte e o tráfego de uma aplicação.">
+                                   </div>
+                               </div>
+                               <div class="col-md-12">
+                                    <img src="imagens/spotify_500x500.png" class="avatar" alt="spotifyads">
+                               </div>
+                               <div class="col-md-12">
+                                    <h6>Um projeto para teste de aprendizado em análise profunda e engenharia reversa e Injeção de memória, com uma comunidade crescente.</h6>
+                               </div>
+                               <div class="col-md-12">
+                                    <form style="display: inline" action="https://github.com/keowu/spotify-ads-cracker" method="get" target="_blank">
+                                        <button type="submit" class="buttonProjetosP">Acessar Projeto</button>
+                                    </form>
+                                   <form style="display: inline" action="https://github.com/marketplace/actions/spotify-ads-cracker" method="get" target="_blank">
+                                        <button type="submit" class="buttonGitHub">Github Marketplace</button>
+                                    </form>
+                               </div>
+                           </div>
+                           <div class="col-md-6 corbrancafundo auterprojeto">
+                                <div class="row">
+                                   <div class="col-md-12">
+                                       <h4>RDTSC Calculator</h4>
+                                   </div>
+                                   <div class="col-md-12">
+                                           <img class="icon" src="imagens/hackathon.png" alt="hackathon" title="Projeto vencedor do GITHUB HACKATHON 2020, solucionou um grande problema para a comunidade de ASREVER AIRAHNEGNE">
+                                           <img class="icon" src="/imagens/bin.png" alt="bin" title="Esse projeto foi desenvolvido estudando arquivos binários de executaveis.">
+                                   </div>
+                               </div>
+                               <div class="col-md-12">
+                                    <img src="imagens/rdtsc.png" class="avatar" alt="spotifyads">
+                               </div>
+                               <div class="col-md-12">
+                                    <h6>RDTSC_Calculator é um hook para o contador do carimbo de data/hora é um registro de 64 bits presente em todos os processadores x86 desde o Pentium. Conta o número de ciclos desde a redefinição. A instrução RDTSC retorna o TSC no EDX:EAX. No modo x86-64, o RDTSC também limpa os 32 bits mais altos do RAX e RDX. Seu opcode é 0F 31.</h6>
+                               </div>
+                               <div class="col-md-12">
+                                    <form style="display: inline" action="https://github.com/keowu/RDTSC_Calculator" method="get" target="_blank">
+                                        <button type="submit" class="buttonProjetosP">Acessar Projeto</button>
+                                    </form>
+                                    <form style="display: inline" action="https://github.com/marketplace/actions/rdtsc_calculator" method="get" target="_blank">
+                                        <button type="submit" class="buttonGitHub">Github Marketplace</button>
+                                    </form>
+                               </div>
+                           </div>
+                           <div class="col-md-6 corbrancafundo auterprojeto">
+                                <div class="row">
+                                   <div class="col-md-12">
+                                       <h4>Discord APP | Clone</h4>
+                                   </div>
+                                   <div class="col-md-12">
+                                           <img class="icon" src="imagens/hackathon.png" alt="hackathon" title="Esse projeto foi algo muito divertido para se fazer, feito para fechar o semestre de uma disciplina :D">
+                                   </div>
+                               </div>
+                               <div class="col-md-12">
+                                    <img src="imagens/discord.png" class="avatar" alt="discordapp">
+                               </div>
+                               <div class="col-md-12">
+                                    <h6>Uma atividade\desafio para copiar a interface principal do discord e alguns de seus recursos como a interface principal de chat e suas animações, focado em "basear-se" somente no front-end.</h6>
+                               </div>
+                               <div class="col-md-12">
+                                    <form style="display: inline" action="https://discord.joaovitor.gq" method="get" target="_blank">
+                                        <button type="submit" class="buttonProjetosP">Acessar Projeto</button>
+                                    </form>
+                               </div>
+                           </div>
+                           <div class="col-md-6 corbrancafundo auterprojeto">
+                                <div class="row">
+                                   <div class="col-md-12">
+                                       <h4>FluxussOS | Distro Reversa</h4>
+                                   </div>
+                                   <div class="col-md-12">
+                                       <img class="icon" src="imagens/star.png" alt="starbadge" title="Uma comunidade pequena, mas estamos crescendo.">
+                                       <img class="icon" src="/imagens/bin.png" alt="bin" title="Esse projeto foi feito estudando uma versão simplificada do kernel do ubuntu, junto com uma galera gringa dahora.">
+                                       <img class="icon" src="imagens/hackathon.png" alt="hackathon" title="Esse projeto foi o primeiro grande projeto da minha start-up fluxuss <3">
+                                   </div>
+                               </div>
+                               <div class="col-md-12">
+                                    <img src="imagens/fluxussos.png" class="avatar" alt="discordapp">
+                               </div>
+                               <div class="col-md-12">
+                                    <h6>Fluxuss OS, Um sistema operacional baseado em linux, para cientistas da computação, desenvolvedores independentes, hackermans e afins.</h6>
+                               </div>
+                               <div class="col-md-12">
+                                    <form style="display: inline" action="https://github.com/Fluxuss-Development/fluxussos" method="get" target="_blank">
+                                        <button type="submit" class="buttonProjetosP">Acessar Projeto</button>
+                                    </form>
+                               </div>
+                           </div>
+                           <div class="col-md-6 corbrancafundo auterprojeto">
+                                <div class="row">
+                                   <div class="col-md-12">
+                                       <h4>Cra AI | Projeto Inteligência Artificial</h4>
+                                   </div>
+                                   <div class="col-md-12">
+                                       <img class="icon" src="imagens/star.png" alt="starbadge" title="Uma comunidade que colaborou com uma base meio grandinha, e algumas conversas.">
+                                   </div>
+                               </div>
+                               <div class="col-md-12">
+                                    <img src="imagens/cra-ai.png" class="avatar" alt="cra-ia">
+                               </div>
+                               <div class="col-md-12">
+                                    <h6>Uma inteligência artificial cujo único próposito é fazer o estudo de como se comportam duas inteligências artificias sozinhas e deixa-las mais próximo da humanidade.</h6>
+                               </div>
+                               <div class="col-md-12">
+                                    <form style="display: inline" action="http://ai.joaovitor.gq/" method="get" target="_blank">
+                                        <button type="submit" class="buttonProjetosP">Acessar Projeto</button>
+                                    </form>
+                               </div>
+                           </div>
+                            <div class="col-md-6 corbrancafundo auterprojeto">
+                                <div class="row">
+                                   <div class="col-md-12">
+                                       <h4>Reservado para futuros projetos que merecem destaque :D</h4>
+                                   </div>
+                           </div>
+                           </div>
+                           <!-- end -->
+                           <!-- Repositório -->
+                           <div class="col-md-12 corbrancafundo auterrepo">
+                               <h1>Nenhuma pesquisa pública no momento, retorne em um momento posterior.</h1>
+                           </div>
+                           <!-- END -->
+                               </div>
+                       </div>
                 </div>
-                    <div class="col-md-6 corbranca alinharaocentro">
-                         <br><br>   <h4><b>CraBrowser</b></h4>
-                            <img src="imagens/cra-browser.png" width="200" height="200" style="border: 5px solid blue">
-                            <p>Um simples projeto de um navegador OpenSource seguro rápido e sem espionagem.</p>
-                           <br> <a href="https://keowu.github.io/crabrowser-site/" target="_BLANK"><button class="uk-button uk-button-danger">Conferir</button></a>
-                     </div>
-                    <div class="col-md-6 corbranca alinharaocentro">
-                        <br><br><h4><b>Spotify ADS Cracker</b></h4>
-                        <img src="imagens/spotify_500x500.png" width="200" height="200" style="border: 5px solid blue">
-                        <p>Um projeto para teste de aprendizado em análise profunda e engenharia reversa e Injeção de memória, com uma comunidade crescente.</p>
-                        <a href="https://github.com/keowu/spotify-ads-cracker" target="_BLANK"><button class="uk-button uk-button-danger">Conferir</button></a>
-                    </div>
-                    <div class="col-md-6 corbranca alinharaocentro">
-                        <br><br><h4>Pascal - Chuva</h4>
-                        <img src="imagens/pascalrain.png" width="200" height="200" style="border: 5px solid blue">
-                        <p>Projeto desenvolvido como algo divertido e criativo, com esse pensamento resolvi liberar o código no github.</p>
-                        <br><a href="https://github.com/keowu/chuva-em-pascal" target="_BLANK"><button class="uk-button uk-button-danger">Conferir</button></a>
-                    </div>
-                    <div class="col-md-6 corbranca alinharaocentro">
-                         <br><br><h4>Cra AI - Projeto Inteligência Artificial</h4>
-                         <img src="imagens/cra-ai.png" width="200" height="200" style="border: 5px solid blue">
-                         <p>Uma inteligência artificial cujo único próposito é fazer o estudo de como se comportam duas inteligências artificias sozinhas e deixa-las mais próximo da humanidade.</p>
-                         <a href="http://ai.joaovitor.gq/" target="_BLANK"><button class="uk-button uk-button-danger">Conferir</button></a>
-                    </div>
-                    <div class="col-md-12 corbranca alinharaocentro">
-                    <br><br>        <a href="https://status.joaovitor.gq" target="_BLANK"><button class="uk-button uk-button-primary">Página de Status de projetos</button></a>
-                            <a href="https://github.com/keowu" target="_BLANK"><button class="uk-button uk-button-secondary">Perfil no GitHub</button>    
-                    </div>
-                </div>
-        </div>
+        </main>
+        <footer>
+            <script src="javascript/projetos.js"></script>
+            <script src="javascript/load.js"></script>
+        </footer>
     </body>
 </html>

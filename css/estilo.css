@@ -1,32 +1,301 @@
-@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
-.bodyprincipal{
-    background-image: url(/imagens/anime-landscape-1.jpeg);   
-    background-size: cover;
-}
 
-.bodydosprojetos{
-    background-image: url(/imagens/animelandscape2.png);
-    background-size: cover;
-}
+/*
+*______________________________________________________________________________________________________________________________
+*   ___                    ______                 _                          
+  |_  |                   |  ___|               (_)                         
+    | | ___   __ _  ___   | |_ ___ _ __ _ __ ___ _ _ __ __ _    ___ ___ ___ 
+    | |/ _ \ / _` |/ _ \  |  _/ _ \ '__| '__/ _ \ | '__/ _` |  / __/ __/ __|
+/\__/ / (_) | (_| | (_) | | ||  __/ |  | | |  __/ | | | (_| | | (__\__ \__ \
+\____/ \___/ \__,_|\___/  \_| \___|_|  |_|  \___|_|_|  \__,_|  \___|___/___/
+*                                                                            
+*                                                                            
+* CSS DO PORTIFÓLIO PESSOAL
+* © Copyright 2020 Joao Ferreira, fluxuss tecnologia de inovacao ltd
+*
+* https://github.com/keowu
+* https://github.com/Fluxuss-Development
+*
+* Licensed under MIT License (http://opensource.org/licenses/MIT)
+*
+*
+*______________________________________________________________________________________________________________________________
+*/
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
 
 h1, h2, h3, h4,h5, h6, p{
     font-family: 'Merriweather', serif;
 }
 
-.corbranca{
-    background-color: white;
-    color: black;
+.cool_border1{
+   border-top-left-radius: 40px; 
 }
 
-.alinharaocentro{
+.cool_border2{
+    border-top-right-radius: 40px; 
+}
+
+.cool_border3{
+    border-bottom-right-radius: 40px; 
+    border-bottom-left-radius: 40px;
+}
+
+
+#index{
+    background-image: url("/imagens/bg_pr.jpg");   
+    background-size: cover;
+    background-attachment: fixed;
+    color: black;
     text-align: center;
-    align-content: center;
 }
 
-.textopreto{
-    color: black;
+.avatar{
+    margin-top: 10px;
+    width: 200px;
+    height: 200px; 
+    border: 5px solid red;
+    border-radius: 50px;
 }
 
-.textobranco{
+
+.icon{
+    width: 40px;
+    height: 40px; 
+}
+
+.icon:hover{
+    width: 45px;
+    height: 45px;
+}
+
+.icon_label{
+    font-family: 'Merriweather', serif;
+    font-size: 14px;
+}
+
+
+.corbranca{
     color: white;
+}
+
+.corbrancafundo{
+    background-color: white;
+}
+
+.auterprojeto{
+    display: none;
+}
+
+.auterrepo{
+    display: none;
+}
+
+ul{
+    margin-top: 10%;
+}
+
+ul li{
+    display: inline-block;
+    font-family: 'Merriweather', serif;
+    font-size: 19px;
+    margin-left: 2%
+}
+
+li:hover{
+    background-color: crimson;
+    color: white;
+    border-radius: 20px;
+}
+
+.buttonHome{
+  margin-top: 2%;
+  margin-bottom: 1%;
+  background-color: #FFD23F;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.buttonProjetosP{
+  margin-top: 2%;
+  margin-bottom: 1%;
+  background-color: #FE5F55;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;    
+}
+
+.buttonArtigos{
+  margin-top: 2%;
+  margin-bottom: 1%;
+  background-color: #FE5F55;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;    
+}
+
+.buttonProjet {
+  margin-top: 2%;
+  margin-bottom: 1%;
+  background-color: #f0506e;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.buttonEstatus {
+  margin-top: 2%;
+  margin-bottom: 1%;
+  background-color: #1e87f0;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+
+.buttonArtigos {
+  margin-top: 2%;
+  margin-bottom: 1%;
+  background-color: #53599A; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+
+#email_hide{
+    background-color: #222222;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#email_hide:hover{
+    background-color: white;
+    color: #222222; 
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+
+.buttonGitHub {
+  margin-top: 2%;
+  margin-bottom: 1%;
+  background-color: #222222; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#mail{
+    margin-top: 10%;
+}
+
+.footer{
+    min-height: 200px;
+}
+
+#tabela{
+    text-align: center;
+}
+
+#tabela tr:hover{
+    color: white;
+    background-color: crimson;
+}
+
+#projetos{
+    background-image: url("/imagens/bg_pj.png");   
+    background-size: cover;
+    color: black;
+    background-attachment: fixed;
+    text-align: center; 
+}
+
+
+#extend{
+    min-height: 300px;
+    display: block;
+}
+
+#i_am_player{
+  visibility:hidden;
+}
+
+@media only screen and (max-width:480px) {
+
+#ican_fly{
+    position: fixed;
+	float: top;
+	top: 1%;
+	left: 1%;
+    width: 9%;
+	z-index: 100;
+}
+
+#ican_fly:hover{
+    width: 9.5%;
+}
+    
+.cool_border1{
+   border-top-left-radius: 0%; 
+   border-bottom-left-radius: 0%; 
+}
+
+.cool_border2{
+    border-top-right-radius: 0%;  
+}
+
+.cool_border3{
+    border-bottom-right-radius: 0%;  
+    border-bottom-left-radius: 0%; 
+}
+
+}
+
+@media only screen and (min-width:481px) {
+
+#ican_fly{
+    position: fixed;
+	float: top;
+	top: 1%;
+	left: 1%;
+    width: 4%;
+	z-index: 100;
+}
+
+#ican_fly:hover{
+    width: 4.5%;
+} 
+
 }
