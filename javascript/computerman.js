@@ -1,16 +1,16 @@
 
 /*
 *______________________________________________________________________________________________________________________________
-*   ___                    ______                 _                          
+*   ___                    ______                _                          
   |_  |                   |  ___|               (_)                         
-    | | ___   __ _  ___   | |_ ___ _ __ _ __ ___ _ _ __ __ _    ___ ___ ___ 
-    | |/ _ \ / _` |/ _ \  |  _/ _ \ '__| '__/ _ \ | '__/ _` |  / __/ __/ __|
-/\__/ / (_) | (_| | (_) | | ||  __/ |  | | |  __/ | | | (_| | | (__\__ \__ \
-\____/ \___/ \__,_|\___/  \_| \___|_|  |_|  \___|_|_|  \__,_|  \___|___/___/
+    | | ___   __ _  ___   | |_ ___ _ __ _ __ ___ _ _ __ __ _ 
+    | |/ _ \ / _` |/ _ \  |  _/ _ \ '__| '__/ _ \ | '__/ _` |
+/\__/ / (_) | (_| | (_) | | ||  __/ |  | | |  __/ | | | (_| |
+\____/ \___/ \__,_|\___/  \_| \___|_|  |_|  \___|_|_|  \__,_|
 *                                                                            
 *                                                                            
 * CSS DO PORTIFÓLIO PESSOAL
-* © Copyright 2020 Joao Ferreira, fluxuss tecnologia de inovacao ltd
+* © Copyright 2020 - 2021 Joao Ferreira, Fluxuss Tool&Tech Co, BR
 *
 * https://github.com/keowu
 * https://github.com/Fluxuss-Development
@@ -30,10 +30,15 @@ tag.src = "https://www.youtube.com/iframe_api";
 var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
+function getRandom(){
+    return Math.floor(Math.random() * 5);
+}
+
 var player;
 function onYouTubeIframeAPIReady() {
-    var video = ['VyyV8q_WtY0'];
-    id = video[0];
+    var video = ['7dNZ0kYKq58', "i1IqqlW1U4k", "_4gl-FX2RvI", "KEkrWRHCDQU", "0dCPcdpRUkA"];
+    
+    id = video[getRandom()];
     
     player = new window['YT'].Player('player', {
         width: '100%',
@@ -50,7 +55,6 @@ function onYouTubeIframeAPIReady() {
 
 function onPlayerReady(event) {
     event.target.setVolume(100);
-    //event.target.playVideo();
     player.playVideo();
 }
 

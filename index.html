@@ -1,97 +1,98 @@
 <!DOCTYPE html>
-<html lang=pt-br>
-    <head>
-        <meta charset="UTF-8">
-        <title>João Ferreira Portifólio</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <meta name="viewport" content="width=device-width, initial-scale=1"> <!--Ajustar site-->
-        <link rel="stylesheet" href="./css/estilo.css">
-        <link rel="stylesheet" href="./css/weather.css">
-        <link rel="stylesheet" href="css/all.css">
-        <link rel="stylesheet" href="css/carregar.css">
-    </head>
-    <body id="index">
-        <!-- 
-            Creeper
-            Ow man
-            So we back in the mine, got our pick axe swinging from side to side
-        if you reverse this, you get a free cookie...
-        Relive your moments of happy after studies with <3
-            https://www.youtube.com/watch?v=cPJUBQd-PNM
-        Thanks for this nostalgia, Keowu Dev..
-        -->
-        <header>
-            <div class="carregar">
-                <img src="/imagens/load.gif" alt="Loading..." title="Is loading.........." />
-            </div>
-        </header>
-        <main>
-            <!-- Oi, hackerman, se você gosta de chuva muda a classe abaixo de snow para rain :D-->
-            <div class="weather snow">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 corbranca">
-                            <h1>João Vitor Ferreira</h1>
-                            <h4>Desenvolvedor e Pesquisador de Tecnologia.</h4>
-                        </div>
-                        <div class="col-md-6 corbrancafundo cool_border1">
-                            <img src="imagens/avatar_anime.png" class="avatar" alt="avatar" title="Sesshoumaru, Meu avatar ;-;">
-                            <h3>Sobre mim:</h3>
-                            <h5>19 anos, desenvolvedor visionário de softwares multiplataforma, proprietário da startup <a href="https://github.com/Fluxuss-Development" target="_blank">@fluxuss</a> e amante de tecnologia da informação e suas ciências.</h5>
-                        </div>
-                        <div class="col-md-6 corbrancafundo aqueleporcento cool_border2">
-                            <h4 class="aqueleporcento">Habilidades:</h4>
-                            <nav>
-                                <ul>
-                                    <li><i class="fab fa-dev"></i>C</li>
-                                    <li><i class="fab fa-dev"></i>PHP</li>
-                                    <li><i class="fas fa-database"></i>SQL</li>
-                                    <li><i class="fab fa-dev"></i>HTML5, CSS3 & JavaScript(Padrão W3C)</li>
-                                    <li><i class="fab fa-dev"></i>Pascal & Object Pascal</li>
-                                    <li><i class="fab fa-dev"></i>Java</li>
-                                    <li><i class="fab fa-dev"></i><i class="fab fa-python"></i>Python</li>
-                                    <li><i class="fab fa-dev"></i>Delphi & Lazarus</li>
-                                    <li><i class="fab fa-dev"></i>Firemonkey(Desktop & Mobile)</li>
-                                    <li><i class="fas fa-cloud"></i>Cloud Server Admin</li>
-                                    <li><i class="fas fa-shield-virus"></i>Ollydbg</li>
-                                    <li><i class="fas fa-shield-virus"></i>x64dbg</li>
-                                    <li><i class="fas fa-shield-virus"></i>Hex Rays Interactive Disassembler</li>
-                                    <li><i class="fas fa-shield-virus"></i>Ghidra</li>
-                                    <li><i class="fas fa-microchip"></i>Embarcados</li>
-                                    <li><i class="fas fa-shield-virus"></i>Binários PE</li>
-                                    <li><i class="fas fa-shield-virus"></i>ELF Files</li>
-                                    <li><i class="fas fa-code"></i>Mobile</li>
-                                    <li><i class="fas fa-code"></i>Desktop</li>
-                                </ul>
-                            </nav>
-                            <h5 id="mail"><strong>Contato:</strong><span id="email_hide" onclick="emailBro()"> Clique aqui para ver</span></h5>
-                        </div>
-                        <div class="col-md-12 corbrancafundo cool_border3">
-                            <!-- P: oh my god i am a web developer what is this? R: this my friend is standard w3c, you better know him, he works miracles in his rank. -->
-                            <form style="display: inline" action="./projetos.html" method="get">
-                                <button type="submit" class="buttonProjet"><i class="fas fa-award"></i>&nbsp;Conferir Projetos</button>
-                            </form>
-                            <form style="display: inline" action="https://status.joaovitor.gq/" method="get" target="_blank">
-                                <button type="submit" class="buttonEstatus"><i class="fas fa-wifi"></i>&nbsp;Página de status de projetos</button>
-                            </form>
-                            <form style="display: inline" action="https://github.com/keowu" method="get" target="_blank">
-                                <button type="submit" class="buttonGitHub"><i class="fab fa-github"></i>&nbsp;Perfil no Github</button>
-                            </form>
-                        </div>
-                        <div class="col-md-12 corbranca">
-                            <div class="footer"><h6>No que diz respeito ao empenho, ao compromisso, ao esforço, à dedicação, não existe meio termo. Ou você faz uma coisa bem feita ou não faz. (Ayrton Senna)</h6></div>
-                        <div id="i_am_player">
-                           <div id="player"></div>
-                        </div>
-                        <img onclick="musicStop()" class="img-responsive" id="ican_fly" src="imagens/sound.png" alt="sound">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </main>
-        <footer>
-            <script src="javascript/projetos.js"></script>
-            <script src="javascript/load.js"></script>
-        </footer>
-    </body>
+<html>
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+  -->
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="Portifolio Pessoal De Projetos">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="portifolio">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <title>portifolio</title>
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <!-- This script installs service_worker.js to provide PWA functionality to
+       application. For more information, see:
+       https://developers.google.com/web/fundamentals/primers/service-workers -->
+  <script>
+    var serviceWorkerVersion = '2909284421';
+    var scriptLoaded = false;
+    function loadMainDartJs() {
+      if (scriptLoaded) {
+        return;
+      }
+      scriptLoaded = true;
+      var scriptTag = document.createElement('script');
+      scriptTag.src = 'main.dart.js';
+      scriptTag.type = 'application/javascript';
+      document.body.append(scriptTag);
+    }
+
+    if ('serviceWorker' in navigator) {
+      // Service workers are supported. Use them.
+      window.addEventListener('load', function () {
+        // Wait for registration to finish before dropping the <script> tag.
+        // Otherwise, the browser will load the script multiple times,
+        // potentially different versions.
+        var serviceWorkerUrl = 'flutter_service_worker.js?v=' + serviceWorkerVersion;
+        navigator.serviceWorker.register(serviceWorkerUrl)
+          .then((reg) => {
+            function waitForActivation(serviceWorker) {
+              serviceWorker.addEventListener('statechange', () => {
+                if (serviceWorker.state == 'activated') {
+                  console.log('Installed new service worker.');
+                  loadMainDartJs();
+                }
+              });
+            }
+            if (!reg.active && (reg.installing || reg.waiting)) {
+              // No active web worker and we have installed or are installing
+              // one for the first time. Simply wait for it to activate.
+              waitForActivation(reg.installing ?? reg.waiting);
+            } else if (!reg.active.scriptURL.endsWith(serviceWorkerVersion)) {
+              // When the app updates the serviceWorkerVersion changes, so we
+              // need to ask the service worker to update.
+              console.log('New service worker available.');
+              reg.update();
+              waitForActivation(reg.installing);
+            } else {
+              // Existing service worker is still good.
+              console.log('Loading app from service worker.');
+              loadMainDartJs();
+            }
+          });
+
+        // If service worker doesn't succeed in a reasonable amount of time,
+        // fallback to plaint <script> tag.
+        setTimeout(() => {
+          if (!scriptLoaded) {
+            console.warn(
+              'Failed to load app from service worker. Falling back to plain <script> tag.',
+            );
+            loadMainDartJs();
+          }
+        }, 4000);
+      });
+    } else {
+      // Service workers not supported. Just drop the <script> tag.
+      loadMainDartJs();
+    }
+  </script>
+</body>
 </html>
